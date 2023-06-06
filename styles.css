@@ -90,3 +90,8 @@ input[type="submit"] {
 #evaluationForm span {
     color: rgb(255, 204, 14);
 }
+
+/* Add spacing */
+.form-spacing {
+    margin-bottom: 10px;
+}
