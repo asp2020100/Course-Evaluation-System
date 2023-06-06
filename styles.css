@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 46, 59);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 204, 14);
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255, 128, 64);
+}
+
+input[type="text"],
+textarea {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid rgb(128, 0, 0);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 204, 14);
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Star rating styles */
+.rating-stars {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rating-stars .fa-star.checked {
+    color: rgb(255, 204, 14);
+}
+
+/* Additional styling */
+#evaluationForm {
+    background-color: rgb(255, 128, 64);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#evaluationForm h2 {
+    color: #fff;
+}
+
+#evaluationForm input[type="submit"] {
+    background-color: rgb(128, 0, 0);
+}
+
+#evaluationForm textarea {
+    border-color: rgb(255, 204, 14);
+}
+
+#evaluationForm label {
+    color: #fff;
+}
+
+#evaluationForm span {
+    color: rgb(255, 204, 14);
+}

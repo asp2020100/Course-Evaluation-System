@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Course Evaluation</h1>
+    
+    <form id="evaluationForm">
+        <!-- Section 01 -->
+        <section>
+            <h2>Section 01</h2>
+            <label for="indexNumber">Index Number:</label>
+            <input type="text" id="indexNumber" name="indexNumber" required>
+            
+            <label>Date:</label>
+            <span id="date"></span>
+            
+            <label>Time:</label>
+            <span id="time"></span>
+        </section>
+        
+        <!-- Section 02 -->
+        <section>
+            <h2>Section 02</h2>
+            <label>The teacher was punctual:</label>
+            <span class="rating-stars">
+                <span class="fa fa-star" data-rating="1"></span>
+                <span class="fa fa-star" data-rating="2"></span>
+                <span class="fa fa-star" data-rating="3"></span>
+                <span class="fa fa-star" data-rating="4"></span>
+                <span class="fa fa-star" data-rating="5"></span>
+            </span>
+            
+            <label>The lectures were clear, interesting, and attractive:</label>
+            <span class="rating-stars">
+                <span class="fa fa-star" data-rating="1"></span>
+                <span class="fa fa-star" data-rating="2"></span>
+                <span class="fa fa-star" data-rating="3"></span>
+                <span class="fa fa-star" data-rating="4"></span>
+                <span class="fa fa-star" data-rating="5"></span>
+            </span>
+            
+            <label>The teaching aids were used effectively during the lecture:</label>
+            <span class="rating-stars">
+                <span class="fa fa-star" data-rating="1"></span>
+                <span class="fa fa-star" data-rating="2"></span>
+                <span class="fa fa-star" data-rating="3"></span>
+                <span class="fa fa-star" data-rating="4"></span>
+                <span class="fa fa-star" data-rating="5"></span>
+            </span>
+            
+            <label>The lecture was conducted at an acceptable pace:</label>
+            <span class="rating-stars">
+                <span class="fa fa-star" data-rating="1"></span>
+                <span class="fa fa-star" data-rating="2"></span>
+                <span class="fa fa-star" data-rating="3"></span>
+                <span class="fa fa-star" data-rating="4"></span>
+                <span class="fa fa-star" data-rating="5"></span>
+            </span>
+            
+            <label>The outline and syllabus were covered as indicated in the timetable:</label>
+            <span class="rating-stars">
+                <span class="fa fa-star" data-rating="1"></span>
+                <span class="fa fa-star" data-rating="2"></span>
+                <span class="fa fa-star" data-rating="3"></span>
+                <span class="fa fa-star" data-rating="4"></span>
+                <span class="fa fa-star" data-rating="5"></span>
+            </span>
+            
+            <label>The lectures helped to improve knowledge about the subject area:</label>
+            <span class="rating-stars">
+                <span class="fa fa-star" data-rating="1"></span>
+                <span class="fa fa-star" data-rating="2"></span>
+                <span class="fa fa-star" data-rating="3"></span>
+                <span class="fa fa-star" data-rating="4"></span>
+                <span class="fa fa-star" data-rating="5"></span>
+            </span>
+        </section>
+        
+        <!-- Section 03 -->
+        <section>
+            <h2>Section 03</h2>
+            <label for="comments">Your suggestions or criticisms:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </section>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
