@@ -1,4 +1,36 @@
 // script.js
+
+// Get all star rating elements
+const ratingStars = document.querySelectorAll('.rating-stars .fa-star');
+
+// Add event listeners to each star
+ratingStars.forEach(star => {
+    star.addEventListener('click', () => {
+        const rating = parseInt(star.getAttribute('data-rating'));
+        const section = star.closest('section');
+        const ratingInput = section.querySelector('.rating-input');
+        ratingInput.value = rating;
+
+        // Remove 'checked' class from all stars
+        ratingStars.forEach(star => {
+            star.classList.remove('checked');
+        });
+
+        // Add 'checked' class to the selected stars
+        for (let i = 0; i < rating; i++) {
+            ratingStars[i].classList.add('checked');
+        }
+    });
+});
+
+// Get current date and time
+const currentDate = new Date();
+const dateElement = document.getElementById('date');
+const timeElement = document.getElementById('time');
+
+dateElement.textContent = currentDate.toLocaleDateString();
+timeElement.textContent = currentDate.toLocaleTimeString();
+
 document.querySelectorAll('.rating-stars').forEach(function(starsContainer) {
     const stars = starsContainer.querySelectorAll('.fa-star');
     stars.forEach(function(star) {
